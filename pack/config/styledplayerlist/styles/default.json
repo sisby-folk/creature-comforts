@@ -1,0 +1,18 @@
+{
+  "style_name": "Default",
+  "update_tick_time": 20,
+  "list_header": [
+    "",
+    "",
+    "<font:'unsanded:default'>Creature Comforts",
+    "",
+    "<font:'unsanded:default'><gr #0d414e #003441><st>              </>[ </><#ffffff>%server:online%<#003441>/</>%server:max_players%</><gr #003441 #0d414e> ]<st>              </>"
+  ],
+  "list_footer": [
+    "<font:'unsanded:default'><gr #0d414e #003441 #0d414e><st>                                       </st>",
+    "",
+    "<#ffdf93>TPS: %server:tps_colored% <#003441>|</> <#ffdf93>Ping: <#ffffff>%player:ping_colored%</>",
+    ""
+  ],
+  "hidden_in_commands": false
+}

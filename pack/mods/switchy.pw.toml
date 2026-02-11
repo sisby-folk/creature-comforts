@@ -1,0 +1,13 @@
+name = "Switchy"
+filename = "switchy-3.2.2+1.21.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/ss0QuCRx/versions/hMwPJCf2/switchy-3.2.2%2B1.21.jar"
+hash-format = "sha512"
+hash = "1e0da9c21516d32aabed448966db9df5e6879fcd8a1719049fa687d2978dbecde78016f0427222855f7a63395124501ea75353e6f56bbe27509a6dba80c8da70"
+
+[update]
+[update.modrinth]
+mod-id = "ss0QuCRx"
+version = "hMwPJCf2"

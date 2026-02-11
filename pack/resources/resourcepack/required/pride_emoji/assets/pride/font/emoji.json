@@ -1,0 +1,157 @@
+{
+	"providers": [
+		{
+			"type": "bitmap",
+			"file": "pride:emoji/ace_heart.png",
+			"height": 9,
+			"ascent": 8,
+			"chars": [
+				""
+			]
+		},
+		{
+			"type": "bitmap",
+			"file": "pride:emoji/agender_heart.png",
+			"height": 9,
+			"ascent": 8,
+			"chars": [
+				""
+			]
+		},
+		{
+			"type": "bitmap",
+			"file": "pride:emoji/aroace_heart.png",
+			"height": 9,
+			"ascent": 8,
+			"chars": [
+				""
+			]
+		},
+		{
+			"type": "bitmap",
+			"file": "pride:emoji/aro_heart.png",
+			"height": 9,
+			"ascent": 8,
+			"chars": [
+				""
+			]
+		},
+		{
+			"type": "bitmap",
+			"file": "pride:emoji/bi_heart.png",
+			"height": 9,
+			"ascent": 8,
+			"chars": [
+				""
+			]
+		},
+		{
+			"type": "bitmap",
+			"file": "pride:emoji/demi_heart.png",
+			"height": 9,
+			"ascent": 8,
+			"chars": [
+				""
+			]
+		},
+		{
+			"type": "bitmap",
+			"file": "pride:emoji/femboy_heart.png",
+			"height": 9,
+			"ascent": 8,
+			"chars": [
+				""
+			]
+		},
+		{
+			"type": "bitmap",
+			"file": "pride:emoji/furry_pride.png",
+			"height": 9,
+			"ascent": 8,
+			"chars": [
+				""
+			]
+		},
+		{
+			"type": "bitmap",
+			"file": "pride:emoji/genderfluid_heart.png",
+			"height": 9,
+			"ascent": 8,
+			"chars": [
+				""
+			]
+		},
+		{
+			"type": "bitmap",
+			"file": "pride:emoji/genderqueer_heart.png",
+			"height": 9,
+			"ascent": 8,
+			"chars": [
+				""
+			]
+		},
+		{
+			"type": "bitmap",
+			"file": "pride:emoji/intersex_heart.png",
+			"height": 9,
+			"ascent": 8,
+			"chars": [
+				""
+			]
+		},
+		{
+			"type": "bitmap",
+			"file": "pride:emoji/lesbian_heart.png",
+			"height": 9,
+			"ascent": 8,
+			"chars": [
+				""
+			]
+		},
+		{
+			"type": "bitmap",
+			"file": "pride:emoji/nb_heart.png",
+			"height": 9,
+			"ascent": 8,
+			"chars": [
+				""
+			]
+		},
+		{
+			"type": "bitmap",
+			"file": "pride:emoji/pan_heart.png",
+			"height": 9,
+			"ascent": 8,
+			"chars": [
+				""
+			]
+		},
+		{
+			"type": "bitmap",
+			"file": "pride:emoji/plural_heart.png",
+			"height": 9,
+			"ascent": 8,
+			"chars": [
+				""
+			]
+		},
+		{
+			"type": "bitmap",
+			"file": "pride:emoji/queer_heart.png",
+			"height": 9,
+			"ascent": 8,
+			"chars": [
+				""
+			]
+		},
+		{
+			"type": "bitmap",
+			"file": "pride:emoji/trans_heart.png",
+			"height": 9,
+			"ascent": 8,
+			"chars": [
+				""
+			]
+		}
+	]
+}

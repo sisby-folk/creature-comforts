@@ -1,0 +1,13 @@
+name = "Don't Do That"
+filename = "dontDoThat-1.21-1.21.2_1.3.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/FBfbX7OM/versions/7murfrKx/dontDoThat-1.21-1.21.2_1.3.0.jar"
+hash-format = "sha512"
+hash = "7757d0cae658d5e7d1c899de2bc77d36cd588b3506de5da898ccaadb1dd41ec8e7b77429baa2ffbffc332752134d4b9651305c48125a7fbbeba8d4fe496b8215"
+
+[update]
+[update.modrinth]
+mod-id = "FBfbX7OM"
+version = "7murfrKx"

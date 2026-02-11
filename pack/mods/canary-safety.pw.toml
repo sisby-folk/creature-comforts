@@ -1,0 +1,13 @@
+name = "Canary"
+filename = "canary-2.3.27.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/iCRO1YNs/versions/wAEsl2qR/canary-2.3.27.jar"
+hash-format = "sha512"
+hash = "213a0e000a31acfb4bf1c5a2be76658868535805b63735515f2bfc6caec7e2c143cc61e53056ac292c750f1ff764a696d9c00f765a7c41fb8c056d7b7d711e10"
+
+[update]
+[update.modrinth]
+mod-id = "iCRO1YNs"
+version = "wAEsl2qR"

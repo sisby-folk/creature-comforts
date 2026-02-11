@@ -1,0 +1,6 @@
+{
+	"game_menu_button_style": "insert",
+	"mods_button_style": "replace_realms",
+	"update_checker": false,
+	"button_update_badge": false
+}

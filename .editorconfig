@@ -1,0 +1,12 @@
+[*]
+indent_size = 4
+indent_style = tab
+tab_width = 4
+insert_final_newline = true
+
+[*.yml]
+indent_size = 2
+indent_style = space
+
+[{*.har,*.json,*.png.mcmeta,mcmod.info,pack.mcmeta}]
+ij_json_array_wrapping = split_into_lines

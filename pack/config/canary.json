@@ -1,3 +1,6 @@
 {
-  "break_legacy_fabric_dependency": false
+	"tracked_data_whitelist": [
+		"io.github.apace100.apoli.mixin.EntityMixin"
+	],
+	"break_legacy_fabric_dependency": false
 }

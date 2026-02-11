@@ -21,7 +21,7 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  PACKWIZ_COMMIT: a0d66150dfe925708feaa381f761d18a8bf9cf71
+  PACKWIZ_COMMIT: 52b123018f9e19b49703f76e78ad415642acf5c5
   PACKWIZ_DIR: /tmp/packwiz_artifact
   PACKWIZ: /tmp/packwiz_artifact/packwiz
 

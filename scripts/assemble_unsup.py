@@ -28,7 +28,7 @@ def main():
 		constants = common.jsonc_at_home(common.read_file(constants_file))
 
 		# Create prism zip
-		prism = generated_dir / f"{packwiz_info.safe_name()}{("-" + ext) if ext else ""}.zip"
+		prism = generated_dir / f"{packwiz_info.safe_name()}{('-' + ext) if ext else ""}.zip"
 		with ZipFile(prism, "w", compression=zipfile.ZIP_DEFLATED) as output_zip:
 			icon_key = packwiz_info.safe_name()
 
@@ -56,7 +56,7 @@ def main():
 			with open(unsup_jar_file, "wb") as f:
 				f.write(requests.get(f"https://repo.sleeping.town/com/unascribed/unsup/{packwiz_info.unsup}/unsup-{packwiz_info.unsup}.jar").content)
 
-		server_zip = generated_dir / f"{packwiz_info.safe_name()}{("-" + ext) if ext else ""}-Server.zip"
+		server_zip = generated_dir / f"{packwiz_info.safe_name()}{('-' + ext) if ext else ""}-Server.zip"
 		with ZipFile(server_zip, "w", compression=zipfile.ZIP_DEFLATED) as output_zip:
 			if packwiz_info.loader == "fabric":
 				with output_zip.open("fabric-server-launcher.jar", mode="w") as f:

@@ -209,6 +209,10 @@ file = "mods/modmenu.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/mouse-tweaks.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/music-moods.pw.toml"
 metafile = true
 

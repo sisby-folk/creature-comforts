@@ -8,17 +8,17 @@ thickEdges = true
 # #AARRGGBB, in hex
 # matches r'#[0-9A-Fa-f]{8}'
 # default: #505000FF
-primaryColor = "#5000d0ff"
+primaryColor = "#906BC39F"
 # The secondary color of the border gradient
 # #AARRGGBB, in hex
 # matches r'#[0-9A-Fa-f]{8}'
 # default: #5028007F
-secondaryColor = "#5014007f"
+secondaryColor = "#904E7EDA"
 # The color of the tooltip background
 # #AARRGGBB, in hex
 # matches r'#[0-9A-Fa-f]{8}'
 # default: #F0100010
-backgroundColor = "#d8021643"
+backgroundColor = "#F01F153A"
 # Lets Marie know that you are really awesome!
 # default: true
 importantSetting = true

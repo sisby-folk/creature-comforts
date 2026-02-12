@@ -1,35 +1,11 @@
 {
-  colourfulclocks: {
-    // Bornholm Trunk Door Type
-    // Default value: [true]
-    bornholm_trunk_door_type: true,
-    // Bornholm Dial Glass Type
-    // Default value: [true]
-    bornholm_dial_glass_type: true
-  },
-  frightsdelight: {
-    // Bush Growth Condition
-    // Default value: [true]
-    bush_growth_condition: true,
-    // Bush Transform Condition
-    // Default value: [true]
-    bush_transform_condition: true,
-    // Punch Bowl Servings
-    // Default value: [true]
-    punchbowl_servings: true
-  },
-  "item-descriptions": {
+  item_descriptions: {
     // Display Block Descriptions
     // Default value: [true]
     block_descriptions: true,
     // Display Entity Descriptions
     // Default value: [true]
     entity_descriptions: true
-  },
-  ubesdelight: {
-    // Punch Bowl Servings
-    // Default value: [true]
-    punchbowl_servings: true
   },
   waila: {
     // Show Blocks
@@ -219,10 +195,6 @@
     // This value will get merged with the value from the server
     // Default value: [true]
     "redstone.level": true,
-    // Show Player Name
-    // This value will get merged with the value from the server
-    // Default value: [true]
-    "player_head.name": true,
     // Show Composter Level
     // This value will get merged with the value from the server
     // Default value: [true]
@@ -242,6 +214,10 @@
     // Require server to have WTHIT installed, if not, will be locked to [false]
     // Default value: [true]
     "book.bookshelf": true,
+    // Show Lectern Books
+    // Require server to have WTHIT installed, if not, will be locked to [false]
+    // Default value: [true]
+    "book.lectern": true,
     // Enchantment Display Mode
     // Default value: [CYCLE]
     // Available values: [SEPARATE, COMBINED, CYCLE, DISABLED]
@@ -249,9 +225,9 @@
     // Enchantment Cycle Timing (Milliseconds)
     // Default value: [500]
     "book.enchantment_cycle_timing": 500,
-    // Show Written Book Author and Generation
+    // Show Book Details
     // Default value: [true]
-    "book.written": true
+    "book.details": true
   },
   harvest: {
     // Show Harvestability
@@ -295,18 +271,6 @@
     // Custom config, open the following file
     // extra\fluid_blacklist.json5
     "fluid.blacklist": null,
-    // Show Block Crafting Progress
-    // Require server to have WTHIT installed, if not, will be locked to [false]
-    // Default value: [true]
-    "progress.enabled_block": true,
-    // Show Entity Crafting Progress
-    // Require server to have WTHIT installed, if not, will be locked to [false]
-    // Default value: [true]
-    "progress.enabled_entity": true,
-    // Crafting Progress Blacklist
-    // Custom config, open the following file
-    // extra\progress_blacklist.json5
-    "progress.blacklist": null,
     // Show Block Item Contents
     // Require server to have WTHIT installed, if not, will be locked to [false]
     // Default value: [true]
@@ -338,6 +302,30 @@
     // Item Contents Blacklist
     // Custom config, open the following file
     // extra\item_blacklist.json5
-    "item.blacklist": null
+    "item.blacklist": null,
+    // Show Block Crafting Progress
+    // Require server to have WTHIT installed, if not, will be locked to [false]
+    // Default value: [true]
+    "progress.enabled_block": true,
+    // Show Entity Crafting Progress
+    // Require server to have WTHIT installed, if not, will be locked to [false]
+    // Default value: [true]
+    "progress.enabled_entity": true,
+    // Show Estimated Time
+    // Require server to have WTHIT installed, if not, will be locked to [false]
+    // Default value: [true]
+    "progress.time": true,
+    // Replace Item Tooltip
+    // If enabled, replace item tooltip when the recipe has item input and/or output. If not enabled or no item input and output, only shows a progress bar.
+    // Default value: [false]
+    "progress.replace_items": false,
+    // Progress Bar Height
+    // Only for when it shown as a bar and not an arrow
+    // Default value: [1]
+    "progress.height": 1,
+    // Crafting Progress Blacklist
+    // Custom config, open the following file
+    // extra\progress_blacklist.json5
+    "progress.blacklist": null
   }
 }

@@ -339,6 +339,10 @@ metafile = true
 file = "options.txt"
 
 [[files]]
+file = "resourcepacks/compact-font.pw.toml"
+metafile = true
+
+[[files]]
 file = "resourcepacks/unsanded.pw.toml"
 metafile = true
 

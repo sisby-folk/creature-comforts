@@ -339,6 +339,10 @@ metafile = true
 file = "options.txt"
 
 [[files]]
+file = "resourcepacks/unsanded.pw.toml"
+metafile = true
+
+[[files]]
 file = "resources/resourcepack/required/Unsanded-1.1.1-custom.zip"
 
 [[files]]

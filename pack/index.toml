@@ -201,6 +201,10 @@ file = "mods/loadingscreentips.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/main-menu-credits.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/mcqoy.pw.toml"
 metafile = true
 

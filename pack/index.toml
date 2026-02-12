@@ -72,6 +72,10 @@ file = "mods/drogstyle.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/e4mc.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/ears.pw.toml"
 metafile = true
 

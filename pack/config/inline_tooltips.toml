@@ -1,8 +1,8 @@
 [general]
-	# Never show full tooltip details, even when holding Shift.
+	# Never show full tooltip details, even when holding Alt.
 	# default: false
-	neverExpanded = false
-	# Always show full tooltip details without holding Shift.
+	neverExpanded = true
+	# Always show full tooltip details without holding Alt.
 	# default: false
 	alwaysExpanded = false
 	# Amount of space characters between icons.

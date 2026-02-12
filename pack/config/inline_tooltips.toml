@@ -98,7 +98,7 @@
 [developerOptions]
 	# Show debug information when holding Alt.
 	# default: false
-	debugInfo = true
+	debugInfo = false
 	# Food tooltip is hidden when AppleSkin is installed to prevent redundant information.
 	# default: false
 	showFoodTooltipWithAppleSkinInstalled = true

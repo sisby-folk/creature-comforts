@@ -66,7 +66,7 @@ def main():
 					jvm_args.write("-javaagent:unsup.jar".encode("utf-8"))
 
 			with output_zip.open("start.bat", mode="w") as start_out:
-				start_out.write("@echo off\njava -Xmx4096M -Xms4096M -javaagent:unsup.jar -jar fabric-server-launcher.jar nogui".encode("utf-8"))
+				start_out.write("@echo off\njava -Xmx4096M -Xms4096M -javaagent:unsup.jar -jar fabric-server-launcher.jar nogui\npause".encode("utf-8"))
 
 			with output_zip.open("start.sh", mode="w") as start_out:
 				start_out.write("#!/usr/bin/env\njava -Xmx4096M -Xms4096M -javaagent:unsup.jar -jar fabric-server-launcher.jar nogui".encode("utf-8"))

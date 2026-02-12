@@ -1,6 +1,9 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/appleskin.json5"
+
+[[files]]
 file = "config/customwindowtitle-client.toml"
 
 [[files]]
@@ -13,7 +16,13 @@ file = "config/default-hotkeys.json"
 file = "config/emi.css"
 
 [[files]]
+file = "config/inline_tooltips.toml"
+
+[[files]]
 file = "config/isxander-main-menu-credits.json"
+
+[[files]]
+file = "config/item_descriptions.toml"
 
 [[files]]
 file = "config/modernfix-mixins.properties"
@@ -28,6 +37,9 @@ file = "config/styledplayerlist/config.json"
 file = "config/styledplayerlist/styles/default.json"
 
 [[files]]
+file = "config/themetip.toml"
+
+[[files]]
 file = "config/waila/blacklist.json5"
 
 [[files]]
@@ -40,7 +52,26 @@ file = "config/waila/waila_plugins.json5"
 file = "mods/Apoli-2.12.0-alpha.17+mc.1.21.1-blanketcon6.jar"
 
 [[files]]
+file = "mods/Origins-1.13.0-alpha.12-waterless+mc.1.21.1.jar"
+
+[[files]]
+file = "mods/altorigingui.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/ambient-environment.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/apathy.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/appleskin.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/architectury-api.pw.toml"
 metafile = true
 
 [[files]]
@@ -53,6 +84,18 @@ metafile = true
 
 [[files]]
 file = "mods/better-log4j-config.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/boring-default-game-rules.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/cloth-config.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/continuity.pw.toml"
 metafile = true
 
 [[files]]
@@ -72,11 +115,19 @@ file = "mods/drogstyle.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/dynamic-brightness.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/e4mc.pw.toml"
 metafile = true
 
 [[files]]
 file = "mods/ears.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/elytra-trims.pw.toml"
 metafile = true
 
 [[files]]
@@ -89,6 +140,10 @@ metafile = true
 
 [[files]]
 file = "mods/fabric-api.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/fabric-language-kotlin.pw.toml"
 metafile = true
 
 [[files]]
@@ -107,12 +162,11 @@ file = "mods/immediatelyfast.pw.toml"
 metafile = true
 
 [[files]]
-file = "mods/inline-tooltips.pw.toml"
+file = "mods/inline.pw.toml"
 metafile = true
 
 [[files]]
-file = "mods/inline.pw.toml"
-metafile = true
+file = "mods/inline_tooltips-1.6.3-alt+1.21.1-fabric.jar"
 
 [[files]]
 file = "mods/inventory-tabs.pw.toml"
@@ -127,7 +181,19 @@ file = "mods/item-descriptions.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/jamlib.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/lambdabettergrass.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/lithium.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/loadingscreentips.pw.toml"
 metafile = true
 
 [[files]]
@@ -151,10 +217,6 @@ file = "mods/origins-minus.pw.toml"
 metafile = true
 
 [[files]]
-file = "mods/origins.pw.toml"
-metafile = true
-
-[[files]]
 file = "mods/pehkui.pw.toml"
 metafile = true
 
@@ -175,6 +237,10 @@ file = "mods/reeses-sodium-options.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/rightclickharvest.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/shuttfup.pw.toml"
 metafile = true
 
@@ -183,11 +249,19 @@ file = "mods/simple-resource-loader.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/simple-snowy-fix-(forge-fabric).pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/sodium.pw.toml"
 metafile = true
 
 [[files]]
 file = "mods/sseds.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/status-effect-bars.pw.toml"
 metafile = true
 
 [[files]]
@@ -215,6 +289,9 @@ file = "mods/switchy.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/themetip-u0.6-kaleido.jar"
+
+[[files]]
 file = "mods/tinkerers-smithing.pw.toml"
 metafile = true
 
@@ -223,11 +300,19 @@ file = "mods/tinkerers-statures.pw.toml"
 metafile = true
 
 [[files]]
-file = "mods/tooltiptweaks.pw.toml"
+file = "mods/totem-anywhere.pw.toml"
 metafile = true
 
 [[files]]
-file = "mods/totem-anywhere.pw.toml"
+file = "mods/trimmable-tools.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/vehiclefix.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/village-healthcare.pw.toml"
 metafile = true
 
 [[files]]
@@ -236,6 +321,10 @@ metafile = true
 
 [[files]]
 file = "mods/yacl.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/yigd.pw.toml"
 metafile = true
 
 [[files]]

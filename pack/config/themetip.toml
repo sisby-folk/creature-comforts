@@ -1,0 +1,24 @@
+# Enable tooltip border gradient.
+# default: true
+gradient = true
+# Enables the extra pixel on the outside of the border.
+# default: true
+thickEdges = true
+# The primary color of the border gradient
+# #AARRGGBB, in hex
+# matches r'#[0-9A-Fa-f]{8}'
+# default: #505000FF
+primaryColor = "#5000d0ff"
+# The secondary color of the border gradient
+# #AARRGGBB, in hex
+# matches r'#[0-9A-Fa-f]{8}'
+# default: #5028007F
+secondaryColor = "#5014007f"
+# The color of the tooltip background
+# #AARRGGBB, in hex
+# matches r'#[0-9A-Fa-f]{8}'
+# default: #F0100010
+backgroundColor = "#d8021643"
+# Lets Marie know that you are really awesome!
+# default: true
+importantSetting = true

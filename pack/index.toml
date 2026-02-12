@@ -40,6 +40,10 @@ file = "config/waila/waila_plugins.json5"
 file = "mods/Apoli-2.12.0-alpha.17+mc.1.21.1-blanketcon6.jar"
 
 [[files]]
+file = "mods/appleskin.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/badpackets.pw.toml"
 metafile = true
 
@@ -96,6 +100,14 @@ metafile = true
 
 [[files]]
 file = "mods/immediatelyfast.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/inline-tooltips.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/inline.pw.toml"
 metafile = true
 
 [[files]]

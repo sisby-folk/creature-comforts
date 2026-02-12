@@ -1,7 +1,19 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/apathy/boss.cfg"
+
+[[files]]
+file = "config/apathy/general.cfg"
+
+[[files]]
+file = "config/apathy/mobs.cfg"
+
+[[files]]
 file = "config/appleskin.json5"
+
+[[files]]
+file = "config/boring_default_game_rules/config.json"
 
 [[files]]
 file = "config/customwindowtitle-client.toml"
@@ -14,6 +26,9 @@ file = "config/default-hotkeys.json"
 
 [[files]]
 file = "config/emi.css"
+
+[[files]]
+file = "config/fabrication/features.ini"
 
 [[files]]
 file = "config/inline_tooltips.toml"
@@ -177,6 +192,10 @@ file = "mods/inventory-tabs.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/invmove.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/iris.pw.toml"
 metafile = true
 
@@ -213,8 +232,7 @@ file = "mods/modernfix.pw.toml"
 metafile = true
 
 [[files]]
-file = "mods/modmenu.pw.toml"
-metafile = true
+file = "mods/modmenu-v11.0.3+1.21.39f0fcf.jar"
 
 [[files]]
 file = "mods/mouse-tweaks.pw.toml"
@@ -343,15 +361,43 @@ metafile = true
 file = "options.txt"
 
 [[files]]
-file = "resourcepacks/compact-font.pw.toml"
-metafile = true
-
-[[files]]
 file = "resourcepacks/unsanded.pw.toml"
 metafile = true
 
 [[files]]
-file = "resources/resourcepack/required/Unsanded-1.1.1-custom.zip"
+file = "resources/datapack/required/VanillaTweaks_c526213_MC1.21-1.21.11.zip"
+
+[[files]]
+file = "resources/datapack/required/hide_origin_orb/data/c/tags/items/hidden_from_recipe_viewers.json"
+
+[[files]]
+file = "resources/datapack/required/hide_origin_orb/pack.mcmeta"
+
+[[files]]
+file = "resources/datapack/required/hide_origin_unaffected/data/tinkerer/origins/unaffected.json"
+
+[[files]]
+file = "resources/datapack/required/hide_origin_unaffected/data/tinkerer/powers/sized.json"
+
+[[files]]
+file = "resources/datapack/required/hide_origin_unaffected/pack.mcmeta"
+
+[[files]]
+file = "resources/datapack/required/hide_yigd/data/c/tags/items/hidden_from_recipe_viewers.json"
+
+[[files]]
+file = "resources/datapack/required/hide_yigd/pack.mcmeta"
+
+[[files]]
+file = "resources/resourcepack/optional/compact-font.pw.toml"
+metafile = true
+
+[[files]]
+file = "resources/resourcepack/required/VanillaTweaks_r475863_MC1.21.x.zip"
+
+[[files]]
+file = "resources/resourcepack/required/bedrock-waters.pw.toml"
+metafile = true
 
 [[files]]
 file = "resources/resourcepack/required/branding/assets/minecraft/texts/credits.json"
@@ -436,6 +482,13 @@ file = "resources/resourcepack/required/pride_emoji/styled_chat_emoji.json"
 
 [[files]]
 file = "resources/resourcepack/required/twemoji.zip"
+
+[[files]]
+file = "resources/resourcepack/required/varied-connected-bookshelves-optifine-version.zip"
+
+[[files]]
+file = "resources/resourcepack/required/xalis-enchanted-books.pw.toml"
+metafile = true
 
 [[files]]
 file = "server-icon.png"

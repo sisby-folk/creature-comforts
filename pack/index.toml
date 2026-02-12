@@ -1,7 +1,19 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/customwindowtitle-client.toml"
+
+[[files]]
+file = "config/customwindowtitle/icon.png"
+
+[[files]]
+file = "config/default-hotkeys.json"
+
+[[files]]
 file = "config/emi.css"
+
+[[files]]
+file = "config/isxander-main-menu-credits.json"
 
 [[files]]
 file = "config/modernfix-mixins.properties"
@@ -25,9 +37,6 @@ file = "config/waila/waila.json5"
 file = "config/waila/waila_plugins.json5"
 
 [[files]]
-file = "isxander-main-menu-credits.json"
-
-[[files]]
 file = "mods/Apoli-2.12.0-alpha.17+mc.1.21.1-blanketcon6.jar"
 
 [[files]]
@@ -39,15 +48,7 @@ file = "mods/badstdout.pw.toml"
 metafile = true
 
 [[files]]
-file = "mods/ballotbox.pw.toml"
-metafile = true
-
-[[files]]
 file = "mods/better-log4j-config.pw.toml"
-metafile = true
-
-[[files]]
-file = "mods/canary-safety.pw.toml"
 metafile = true
 
 [[files]]
@@ -206,6 +207,10 @@ file = "mods/tinkerers-statures.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/tooltiptweaks.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/totem-anywhere.pw.toml"
 metafile = true
 
@@ -216,6 +221,9 @@ metafile = true
 [[files]]
 file = "mods/yacl.pw.toml"
 metafile = true
+
+[[files]]
+file = "options.txt"
 
 [[files]]
 file = "resources/resourcepack/required/Unsanded-1.1.1-custom.zip"

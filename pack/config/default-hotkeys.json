@@ -1,0 +1,257 @@
+[
+  {
+    "comment": "iris.keybind.reload",
+    "translation": "Reload Shaders",
+    "key": "key.keyboard.r"
+  },
+  {
+    "comment": "iris.keybind.shaderPackSelection",
+    "translation": "Shaderpack Selection Screen",
+    "key": "key.keyboard.o"
+  },
+  {
+    "comment": "iris.keybind.toggleShaders",
+    "translation": "Toggle Shaders",
+    "key": "key.keyboard.k"
+  },
+  {
+    "comment": "iris.keybind.wireframe",
+    "translation": "Wireframe (SP only)",
+    "key": "key.keyboard.unknown"
+  },
+  {
+    "comment": "key.advancements",
+    "translation": "Advancements",
+    "key": "key.keyboard.l"
+  },
+  {
+    "comment": "key.apoli.usability_hint.show_powers",
+    "translation": "Show Powers in Usability Hints",
+    "key": "key.keyboard.left.alt"
+  },
+  {
+    "comment": "key.attack",
+    "translation": "Attack/Destroy",
+    "key": "key.mouse.left"
+  },
+  {
+    "comment": "key.back",
+    "translation": "Walk Backwards",
+    "key": "key.keyboard.s"
+  },
+  {
+    "comment": "key.ballotbox.open",
+    "translation": "key.ballotbox.open",
+    "key": "key.keyboard.apostrophe"
+  },
+  {
+    "comment": "key.chat",
+    "translation": "Open Chat",
+    "key": "key.keyboard.t"
+  },
+  {
+    "comment": "key.command",
+    "translation": "Open Command",
+    "key": "key.keyboard.slash"
+  },
+  {
+    "comment": "key.drop",
+    "translation": "Drop Selected Item",
+    "key": "key.keyboard.q"
+  },
+  {
+    "comment": "key.fabrictailor.toggle_skin_gui",
+    "translation": "Open skin GUI",
+    "key": "key.keyboard.k"
+  },
+  {
+    "comment": "key.forward",
+    "translation": "Walk Forwards",
+    "key": "key.keyboard.w"
+  },
+  {
+    "comment": "key.fullscreen",
+    "translation": "Toggle Fullscreen",
+    "key": "key.keyboard.f11"
+  },
+  {
+    "comment": "key.hoofprint.open",
+    "translation": "Open Map Screen",
+    "key": "key.keyboard.m"
+  },
+  {
+    "comment": "key.hotbar.1",
+    "translation": "Hotbar Slot 1",
+    "key": "key.keyboard.1"
+  },
+  {
+    "comment": "key.hotbar.2",
+    "translation": "Hotbar Slot 2",
+    "key": "key.keyboard.2"
+  },
+  {
+    "comment": "key.hotbar.3",
+    "translation": "Hotbar Slot 3",
+    "key": "key.keyboard.3"
+  },
+  {
+    "comment": "key.hotbar.4",
+    "translation": "Hotbar Slot 4",
+    "key": "key.keyboard.4"
+  },
+  {
+    "comment": "key.hotbar.5",
+    "translation": "Hotbar Slot 5",
+    "key": "key.keyboard.5"
+  },
+  {
+    "comment": "key.hotbar.6",
+    "translation": "Hotbar Slot 6",
+    "key": "key.keyboard.6"
+  },
+  {
+    "comment": "key.hotbar.7",
+    "translation": "Hotbar Slot 7",
+    "key": "key.keyboard.7"
+  },
+  {
+    "comment": "key.hotbar.8",
+    "translation": "Hotbar Slot 8",
+    "key": "key.keyboard.8"
+  },
+  {
+    "comment": "key.hotbar.9",
+    "translation": "Hotbar Slot 9",
+    "key": "key.keyboard.9"
+  },
+  {
+    "comment": "key.inventory",
+    "translation": "Open/Close Inventory",
+    "key": "key.keyboard.e"
+  },
+  {
+    "comment": "key.inventory_tabs.key.next_tab",
+    "translation": "Next Tab",
+    "key": "key.keyboard.tab"
+  },
+  {
+    "comment": "key.inventory_tabs.key.toggle_tabs",
+    "translation": "Toggle Tab Visibility",
+    "key": "key.keyboard.left.bracket"
+  },
+  {
+    "comment": "key.jump",
+    "translation": "Jump",
+    "key": "key.keyboard.space"
+  },
+  {
+    "comment": "key.left",
+    "translation": "Strafe Left",
+    "key": "key.keyboard.a"
+  },
+  {
+    "comment": "key.loadToolbarActivator",
+    "translation": "Load Hotbar Activator",
+    "key": "key.keyboard.x"
+  },
+  {
+    "comment": "key.modmenu.open_menu",
+    "translation": "Open Mod Menu",
+    "key": "key.keyboard.unknown"
+  },
+  {
+    "comment": "key.origins.primary_active",
+    "translation": "Active Power (Primary)",
+    "key": "key.keyboard.g"
+  },
+  {
+    "comment": "key.origins.secondary_active",
+    "translation": "Active Power (Secondary)",
+    "key": "key.keyboard.h"
+  },
+  {
+    "comment": "key.origins.view_origin",
+    "translation": "View Origin",
+    "key": "key.keyboard.o"
+  },
+  {
+    "comment": "key.pickItem",
+    "translation": "Pick Block",
+    "key": "key.mouse.middle"
+  },
+  {
+    "comment": "key.picohud.show",
+    "translation": "Show Overlay",
+    "key": "key.keyboard.left.alt"
+  },
+  {
+    "comment": "key.playerlist",
+    "translation": "List Players",
+    "key": "key.keyboard.tab"
+  },
+  {
+    "comment": "key.portable_crafting.open_crafting_table",
+    "translation": "Open Crafting Table",
+    "key": "key.keyboard.v"
+  },
+  {
+    "comment": "key.right",
+    "translation": "Strafe Right",
+    "key": "key.keyboard.d"
+  },
+  {
+    "comment": "key.saveToolbarActivator",
+    "translation": "Save Hotbar Activator",
+    "key": "key.keyboard.c"
+  },
+  {
+    "comment": "key.screenshot",
+    "translation": "Take Screenshot",
+    "key": "key.keyboard.f2"
+  },
+  {
+    "comment": "key.smoothCamera",
+    "translation": "Toggle Cinematic Camera",
+    "key": "key.keyboard.unknown"
+  },
+  {
+    "comment": "key.sneak",
+    "translation": "Sneak",
+    "key": "key.keyboard.left.shift"
+  },
+  {
+    "comment": "key.socialInteractions",
+    "translation": "Social Interactions Screen",
+    "key": "key.keyboard.p"
+  },
+  {
+    "comment": "key.spectatorOutlines",
+    "translation": "Highlight Players (Spectators)",
+    "key": "key.keyboard.unknown"
+  },
+  {
+    "comment": "key.sprint",
+    "translation": "Sprint",
+    "key": "key.keyboard.left.control"
+  },
+  {
+    "comment": "key.swapOffhand",
+    "translation": "Swap Item With Off Hand",
+    "key": "key.keyboard.f"
+  },
+  {
+    "comment": "key.togglePerspective",
+    "translation": "Toggle Perspective",
+    "key": "key.keyboard.f5"
+  },
+  {
+    "comment": "key.use",
+    "translation": "Use Item/Place Block",
+    "key": "key.mouse.right"
+  },
+  {
+    "comment": "options.narrator_hotkey",
+    "translation": "Toggle Narrator (+Ctrl)",
+    "key": "key.keyboard.unknown"
+  }
+]

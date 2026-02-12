@@ -19,7 +19,7 @@ def main():
 	repo_name = os.path.basename(repo_root.resolve())
 
 	for (url, ext) in [
-		[f"https://{repo_user}.github.io/{repo_name}/pack.toml", "Prism"],
+		[f"https://{repo_user}.github.io/{repo_name}/pack.toml", ""],
 		[f"http://localhost:8080/pack.toml", "Debug"]
 	]:
 		print(f"Generating packs for {url}")
@@ -28,7 +28,7 @@ def main():
 		constants = common.jsonc_at_home(common.read_file(constants_file))
 
 		# Create prism zip
-		prism = generated_dir / f"{packwiz_info.safe_name()}-{ext}.zip"
+		prism = generated_dir / f"{packwiz_info.safe_name()}{("-" + ext) if ext else ""}.zip"
 		with ZipFile(prism, "w", compression=zipfile.ZIP_DEFLATED) as output_zip:
 			icon_key = packwiz_info.safe_name()
 
@@ -38,8 +38,7 @@ def main():
 			with output_zip.open("mmc-pack.json", mode="w") as packjson:
 				packjson.write(create_mmc_meta(packwiz_info, packwiz_info.unsup).encode("utf-8"))
 
-			with output_zip.open(f"{icon_key}.png", mode="w") as f:
-				pass # todo icon
+			output_zip.write(repo_root / 'pack' / 'server-icon.png', icon_key + ".png")
 
 			if packwiz_info.unsup:
 				with output_zip.open("patches/com.unascribed.unsup.json", mode="w") as patch:
@@ -57,7 +56,7 @@ def main():
 			with open(unsup_jar_file, "wb") as f:
 				f.write(requests.get(f"https://repo.sleeping.town/com/unascribed/unsup/{packwiz_info.unsup}/unsup-{packwiz_info.unsup}.jar").content)
 
-		server_zip = generated_dir / f"{packwiz_info.safe_name()}-{ext}-Server.zip"
+		server_zip = generated_dir / f"{packwiz_info.safe_name()}{("-" + ext) if ext else ""}-Server.zip"
 		with ZipFile(server_zip, "w", compression=zipfile.ZIP_DEFLATED) as output_zip:
 			if packwiz_info.loader == "fabric":
 				with output_zip.open("fabric-server-launcher.jar", mode="w") as f:

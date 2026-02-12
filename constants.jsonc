@@ -1,27 +1,19 @@
 {
-    // Central definition of colors
-    // This is a freeform key-value field. Values prefixed with an underscore are depended upon by scripts
     "colors": {
-        "primary": "#49c2e0",
-        "secondary": "#ffc849",
-        "background": "#ffdf93",
-        "background_secondary": "#180101",
-
-        // Unsup colors. See https://git.sleeping.town/unascribed/unsup/wiki/Config-format
-        "_unsup_background": ".background",
+        "_unsup_background": "#222222",
         // Colour of the title text
-        "_unsup_title": "#003441",
+        "_unsup_title": "#FFFFFF",
         // Colour of the subtitle text. Is usually shaded to match the background slightly
-        "_unsup_subtitle": "#c28304",
+        "_unsup_subtitle": "#FFFFFF",
         // The color of the filled portion of the progress bar and wheel
-        "_unsup_progress": ".primary",
+        "_unsup_progress": "#FFFFFF",
         // The color of the non-filled portion of the progress bar
-        "_unsup_progress_track": ".secondary",
+        "_unsup_progress_track": "#FFFFFF",
         // The color of the text in a dialog
-        "_unsup_dialog": "#003441",
+        "_unsup_dialog": "#FFFFFF",
         // The background color of buttons. Please ensure this has enough contrast with the button text!
-        "_unsup_button": ".primary",
+        "_unsup_button": "#888888",
         // The color of text in buttons
-        "_unsup_button_text": "#000000"
+        "_unsup_button_text": "#FFFFFF"
     }
 }

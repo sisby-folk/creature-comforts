@@ -82,7 +82,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: run/cache-dynamic/
-          key: test-run-dynamic-cache-${{ hashFiles('generated/pack/pack.toml') }} # pack.toml contains hashes for all other files
+          key: test-run-dynamic-cache-${{ hashFiles('pack/pack.toml') }} # pack.toml contains hashes for all other files
           restore-keys: test-run-dynamic-cache-
 
       # Run tests
@@ -107,7 +107,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: generated/pack/
+          path: pack/
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

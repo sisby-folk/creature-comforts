@@ -22,7 +22,7 @@ MC_TEST_INJECTOR_VERSION = "v1.0.0"  # https://github.com/TheEpicBlock/mc-test-i
 def main():
 	repo_root = common.get_repo_root()
 	java = common.check_java()
-	pack = repo_root / "pack"
+	pack = common.get_generated_dir() / "pack"
 	pack_toml_file = pack / "pack.toml"
 	test_server_working = Path(common.env("WORK_DIR", default=(repo_root / "run")))
 

@@ -1,0 +1,13 @@
+name = "Revelationary"
+filename = "revelationary-1.3.9+1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/eXrl5E3G/versions/terh3YnD/revelationary-1.3.9%2B1.21.1.jar"
+hash-format = "sha512"
+hash = "f8b556879259ca0f4d9d3ae1a8cef4af2b0a14198f56a5fff6584eb06a9e057786534791f1e53b675df8b6c47d7f245d8d70460c7d08125189f154db82dc01e7"
+
+[update]
+[update.modrinth]
+mod-id = "eXrl5E3G"
+version = "terh3YnD"

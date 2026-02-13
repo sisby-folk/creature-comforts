@@ -1,0 +1,13 @@
+name = "Spectrum"
+filename = "spectrum-1.10.2.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/3rc31Hgo/versions/EhmjHQFq/spectrum-1.10.2.jar"
+hash-format = "sha512"
+hash = "2fb068d240ca07c56a1d36fb253dcf0c076668f5e8cb4a2405a1ba074275e24d2e3a3caaad474552df92881e5bda40b55ee76501d89a505b1369b9a32f57d1d8"
+
+[update]
+[update.modrinth]
+mod-id = "3rc31Hgo"
+version = "EhmjHQFq"

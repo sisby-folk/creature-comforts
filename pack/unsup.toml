@@ -1,0 +1,18 @@
+[flavor_groups.modded]
+name = "Modded Content"
+side = "both"
+description = "Whether to ship Creature Comforts with vanilla-incompatible content."
+[[flavor_groups.modded.choices]]
+id = "byo"
+name = "BYO"
+description = "No modded content added. Your worlds will remain compatible with vanilla - or add your own selection of content mods!"
+[[flavor_groups.modded.choices]]
+id = "chefs_choice"
+name = "Chef's Choice"
+description = "Include a small selection of cohesive, self-contained content mods. Installs Cerulean and Spectrum"
+
+[metafile.cerulean]
+flavors="chefs_choice"
+
+[metafile.spectrum]
+flavors="chefs_choice"

@@ -1,8 +1,0 @@
-name = "fabrication"
-filename = "fabrication-3.6.6+1.21.jar"
-side = "both"
-
-[download]
-url = "https://github.com/FalsehoodMC/Fabrication/releases/download/v3.6.6/fabrication-3.6.6+1.21.jar"
-hash-format = "sha256"
-hash = "260eaa07806d2b78eb1c6ec55a24a8d82d9c880f0606d5a5d4ffa0f5049f96a9"

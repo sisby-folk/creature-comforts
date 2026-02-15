@@ -10,18 +10,3 @@ description = "No modded content added. Your worlds will remain compatible with 
 id = "chefs_choice"
 name = "Chef's Choice"
 description = "Include a small selection of cohesive, self-contained content mods. Installs Cerulean and Spectrum"
-
-[metafile.cerulean]
-flavors="chefs_choice"
-
-[metafile.spectrum]
-flavors="chefs_choice"
-
-[metafile.modonomicon]
-flavors="chefs_choice"
-
-[metafile.revelationary]
-flavors="chefs_choice"
-
-[metafile.trinkets]
-flavors="chefs_choice"

@@ -1,13 +1,13 @@
 name = "Dynamic Brightness"
-filename = "DynamicBrightness-fabric-1.3.0.jar"
+filename = "DynamicBrightness-neoforge-1.3.1.jar"
 side = "client"
 
 [download]
-url = "https://cdn.modrinth.com/data/qTnNnvU0/versions/kssjN2x0/DynamicBrightness-fabric-1.3.0.jar"
+url = "https://cdn.modrinth.com/data/qTnNnvU0/versions/RkOABh7A/DynamicBrightness-neoforge-1.3.1.jar"
 hash-format = "sha512"
-hash = "f61de6a716b20ea67d75be01506251d92c1fba784e7871072d2b56507488e0d7900a0e7423cffc439968d3bc136a7bedfef9698a5d6ee1bc43d97a41e9166331"
+hash = "bddd39a8dac50561c9a8775e825d250a6b07474e2b3ae87ad8cf4b40144bd2e48aefdbf79c00a09305b3cc4c04f678df977142c769c884aade71ef617674216c"
 
 [update]
 [update.modrinth]
 mod-id = "qTnNnvU0"
-version = "kssjN2x0"
+version = "RkOABh7A"

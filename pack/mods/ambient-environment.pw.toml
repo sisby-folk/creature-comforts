@@ -1,13 +1,13 @@
 name = "Ambient Environment"
-filename = "AmbientEnvironment-fabric-1.21.1-18.0.0.2.jar"
+filename = "AmbientEnvironment-neoforge-1.21.1-18.0.0.2.jar"
 side = "client"
 
 [download]
-url = "https://cdn.modrinth.com/data/DyTvM1dv/versions/TsLZwxGv/AmbientEnvironment-fabric-1.21.1-18.0.0.2.jar"
+url = "https://cdn.modrinth.com/data/DyTvM1dv/versions/N7jam3SN/AmbientEnvironment-neoforge-1.21.1-18.0.0.2.jar"
 hash-format = "sha512"
-hash = "cba802b05bc139732d15a839eb8983e5a083df9c1c6b3d65a07354dd68351b6cc80e76a14ce8e509d80b516f9683b92e4526cca03c988b5e86478c0d4ea91af2"
+hash = "aad91081e677097847ad847463717fdb77abf32a1a27176b019fa919ba505a3ab01b6d06c30d63da800a0b5b490be3cf5a7cf80f2193b6a8394a4249ba2cfeaa"
 
 [update]
 [update.modrinth]
 mod-id = "DyTvM1dv"
-version = "TsLZwxGv"
+version = "N7jam3SN"

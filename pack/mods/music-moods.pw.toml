@@ -1,13 +1,13 @@
 name = "Music Moods"
-filename = "music-moods-0.7.0-alpha.2+mc.1.21.jar"
+filename = "music-moods-0.7.0-alpha.2+mc.1.21.1.jar"
 side = "client"
 
 [download]
-url = "https://cdn.modrinth.com/data/z23qey0b/versions/1AfrUxHd/music-moods-0.7.0-alpha.2%2Bmc.1.21.jar"
+url = "https://cdn.modrinth.com/data/z23qey0b/versions/6Otgabgz/music-moods-0.7.0-alpha.2%2Bmc.1.21.1.jar"
 hash-format = "sha512"
-hash = "9f1adb4da304acddbf62ff606b8777c30a6f6d7061f150bf15f2565d20adf87dfe392ddb7b5e4a98a7fe8639d7e90cff5e03a2452d90585b81ade478f4c1c355"
+hash = "ed4551b9e2bc338a1c467d51e355e88a1b0036203b0dd2d8cbcbbbde6d55c1048a29ea606565e1ced055420675843f4c02dc02c17cf64838e566060adf76fac4"
 
 [update]
 [update.modrinth]
 mod-id = "z23qey0b"
-version = "1AfrUxHd"
+version = "6Otgabgz"

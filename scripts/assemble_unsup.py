@@ -72,9 +72,13 @@ def main():
 				with output_zip.open("user_jvm_args.txt", mode="w") as jvm_args:
 					jvm_args.write("-javaagent:unsup.jar".encode("utf-8"))
 				with output_zip.open("install.bat", mode="w") as start_out:
-					start_out.write("java -jar neoforge-installer.jar --install-server --server-jar".encode("utf-8"))
+					start_out.write("java -jar neoforge-installer.jar --install-server".encode("utf-8"))
 				with output_zip.open("install.sh", mode="w") as start_out:
-					start_out.write("#!/usr/bin/env\njava -jar neoforge-installer.jar --install-server --server-jar".encode("utf-8"))
+					start_out.write("#!/usr/bin/env\njava -jar neoforge-installer.jar --install-server".encode("utf-8"))
+				with output_zip.open("start.bat", mode="w") as start_out:
+					start_out.write(f"CALL run.bat nogui".encode("utf-8"))
+				with output_zip.open("start.sh", mode="w") as start_out:
+					start_out.write(f"#!/usr/bin/env\n./run.sh nogui".encode("utf-8"))
 
 			with output_zip.open("unsup.jar", mode="w") as unsup_out:
 				with open(unsup_jar_file, "rb") as unsup_src:
@@ -150,14 +154,14 @@ def create_instance_config(packwiz_info, icon_name):
 
 # Creates the unsup config file, which tells unsup where
 # to download mods from
-def create_unsup_ini(url: str, constants, flavors, env):
+def create_unsup_ini(url: str, constants, flavors):
 	colour_entries = []
 	for colour_key in unsup_colors:
 		colour_value = common.get_colour(constants, "_unsup_" + colour_key)
 		if colour_value:
 			colour_value = colour_value.replace("#", "")
 			colour_entries.append(f"{colour_key}={colour_value}")
-	return unsup_ini_template.replace("{nogui}", "true" if env is "Server" else "false").replace("{env}", env).replace("{url}", url).replace("{colors}", "\n".join(colour_entries)).replace("{flavors}", "\n" if not flavors else "\n".join([f"{k}={flavors[k]}" for k in flavors.keys()]))
+	return unsup_ini_template.replace("{url}", url).replace("{colors}", "\n".join(colour_entries)).replace("{flavors}", "\n" if not flavors else "\n".join([f"{k}={flavors[k]}" for k in flavors.keys()]))
 
 
 instance_cfg_template = """
@@ -184,8 +188,6 @@ version=1
 source_format=packwiz
 source={url}
 preset=minecraft
-force_env={env}
-no_gui={nogui}
 [colors]
 {colors}
 [flavors]

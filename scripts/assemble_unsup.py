@@ -46,7 +46,7 @@ def main():
 					patch.write(create_unsup_patch(packwiz_info.unsup).encode("utf-8"))
 
 			with output_zip.open(".minecraft/unsup.ini", mode="w") as unsupini:
-				unsupini.write(create_unsup_ini(url, constants, flavors, "client").encode("utf-8"))
+				unsupini.write(create_unsup_ini(url, constants, flavors).encode("utf-8"))
 		print(f"Wrote to \"{prism.relative_to(generated_dir)}\"")
 
 		# Download unsup jar for server
@@ -85,7 +85,7 @@ def main():
 					unsup_out.write(unsup_src.read())
 
 			with output_zip.open("unsup.ini", mode="w") as unsupini:
-				unsupini.write(create_unsup_ini(url, constants, flavors, "server").encode("utf-8"))
+				unsupini.write(create_unsup_ini(url, constants, flavors).encode("utf-8"))
 		print(f"Wrote to \"{server_zip.relative_to(generated_dir)}\"")
 
 

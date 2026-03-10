@@ -3,7 +3,7 @@ name: Build & Deploy Modpack
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["1.21"]
+    branches: ["1.21", "1.21-neo"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -34,6 +34,13 @@ jobs:
         with:
           ref: "1.21"
 
+      - name: Checkout neo
+        uses: actions/checkout@v4
+        with:
+          ref: "1.21-neo"
+          path: neo
+          clean: false
+
       # Set up dependencies
 
       - uses: actions/setup-python@v5
@@ -42,14 +49,7 @@ jobs:
       - name: Install main python dependencies
         run: pip install -r requirements.txt
 
-      - name: Cache Packwiz
-        id: cache-packwiz
-        uses: actions/cache@v4
-        with:
-          path: ${{ env.PACKWIZ_DIR }}
-          key: packwiz-${{ env.PACKWIZ_COMMIT }}
-      - if: ${{ steps.cache-packwiz.outputs.cache-hit != 'true' }}
-        name: Download Packwiz
+      - name: Download Packwiz
         uses: dawidd6/action-download-artifact@v8
         with:
           github_token: ${{secrets.GITHUB_TOKEN}}
@@ -57,8 +57,7 @@ jobs:
           workflow: go.yml
           name: "Linux 64-bit x86"
           path: ${{ env.PACKWIZ_DIR }}
-          commit: ${{ env.PACKWIZ_COMMIT }}
-          allow_forks: true
+          branch: "main"
       - name: Make packwiz executable
         run: chmod +x ${{ env.PACKWIZ }}
 
@@ -66,6 +65,9 @@ jobs:
 
       - name: Build main pack
         run: python scripts/assemble_packwiz.py
+
+      - name: Build neo pack
+        run: python neo/scripts/assemble_packwiz.py
 
       # Setup test-runner cache
       - name: Generate cache key
@@ -94,8 +96,17 @@ jobs:
       - name: Test main pack
         run: python scripts/run_test.py
 
+      - name: Test neo pack
+        run: python neo/scripts/run_test.py
+
       - name: Build unsup
         run: python scripts/assemble_unsup.py
+
+      - name: Build unsup
+        run: python neo/scripts/assemble_unsup.py
+
+      - name: Copy neo pack
+        run: cp -r neo/generated/pack generated/pack/neo
 
       - uses: actions/upload-artifact@v4
         with:

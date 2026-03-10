@@ -34,6 +34,13 @@ jobs:
         with:
           ref: "1.21"
 
+      - name: Checkout neo
+        uses: actions/checkout@v4
+        with:
+          ref: "neo"
+          path: neo
+          clean: false
+
       # Set up dependencies
 
       - uses: actions/setup-python@v5
@@ -67,6 +74,9 @@ jobs:
       - name: Build main pack
         run: python scripts/assemble_packwiz.py
 
+      - name: Build neo pack
+        run: python neo/scripts/assemble_packwiz.py
+
       # Setup test-runner cache
       - name: Generate cache key
         run: python scripts/run_test.py
@@ -94,8 +104,17 @@ jobs:
       - name: Test main pack
         run: python scripts/run_test.py
 
+      - name: Test neo pack
+        run: python neo/scripts/run_test.py
+
       - name: Build unsup
         run: python scripts/assemble_unsup.py
+
+      - name: Build unsup
+        run: python neo/scripts/assemble_unsup.py
+
+      - name: Copy neo pack
+        run: cp -r neo/generated/pack generated/pack/neo
 
       - uses: actions/upload-artifact@v4
         with:

@@ -19,8 +19,8 @@ def main():
 	repo_name = os.path.basename(repo_root.resolve())
 
 	for (url, ext, flavors) in [
-		[f"https://{repo_user}.github.io/{repo_name}/neo/pack.toml", "", {"modded": "byo"}],
-		[f"https://{repo_user}.github.io/{repo_name}/neo/pack.toml", "Modded", {"modded": "chefs_choice"}],
+		[f"https://{repo_user}.github.io/creature-comforts/neo/pack.toml", "", {"modded": "byo"}],
+		[f"https://{repo_user}.github.io/creature-comforts/neo/pack.toml", "Modded", {"modded": "chefs_choice"}],
 		[f"http://localhost:8080/pack.toml", "Debug", {"modded": "chefs_choice"}]
 	]:
 		print(f"Generating packs for {url}")

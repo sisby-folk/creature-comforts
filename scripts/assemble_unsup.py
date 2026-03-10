@@ -46,7 +46,7 @@ def main():
 					patch.write(create_unsup_patch(packwiz_info.unsup).encode("utf-8"))
 
 			with output_zip.open(".minecraft/unsup.ini", mode="w") as unsupini:
-				unsupini.write(create_unsup_ini(url, constants, flavors).encode("utf-8"))
+				unsupini.write(create_unsup_ini(url, constants, flavors, "client").encode("utf-8"))
 		print(f"Wrote to \"{prism.relative_to(generated_dir)}\"")
 
 		# Download unsup jar for server
@@ -81,7 +81,7 @@ def main():
 					unsup_out.write(unsup_src.read())
 
 			with output_zip.open("unsup.ini", mode="w") as unsupini:
-				unsupini.write(create_unsup_ini(url, constants, flavors).encode("utf-8"))
+				unsupini.write(create_unsup_ini(url, constants, flavors, "server").encode("utf-8"))
 		print(f"Wrote to \"{server_zip.relative_to(generated_dir)}\"")
 
 
@@ -150,14 +150,14 @@ def create_instance_config(packwiz_info, icon_name):
 
 # Creates the unsup config file, which tells unsup where
 # to download mods from
-def create_unsup_ini(url: str, constants, flavors):
+def create_unsup_ini(url: str, constants, flavors, env):
 	colour_entries = []
 	for colour_key in unsup_colors:
 		colour_value = common.get_colour(constants, "_unsup_" + colour_key)
 		if colour_value:
 			colour_value = colour_value.replace("#", "")
 			colour_entries.append(f"{colour_key}={colour_value}")
-	return unsup_ini_template.replace("{url}", url).replace("{colors}", "\n".join(colour_entries)).replace("{flavors}", "\n" if not flavors else "\n".join([f"{k}={flavors[k]}" for k in flavors.keys()]))
+	return unsup_ini_template.replace("{nogui}", "true" if env is "Server" else "false").replace("{env}", env).replace("{url}", url).replace("{colors}", "\n".join(colour_entries)).replace("{flavors}", "\n" if not flavors else "\n".join([f"{k}={flavors[k]}" for k in flavors.keys()]))
 
 
 instance_cfg_template = """
@@ -184,6 +184,8 @@ version=1
 source_format=packwiz
 source={url}
 preset=minecraft
+force_env={env}
+no_gui={nogui}
 [colors]
 {colors}
 [flavors]

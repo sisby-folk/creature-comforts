@@ -20,7 +20,6 @@ def main():
 
 	for (url, ext) in [
 		[f"https://{repo_user}.github.io/{repo_name}/pack.toml", ""],
-		[f"https://{repo_user}.github.io/{repo_name}/neo/pack.toml", "Neo"],
 		[f"http://localhost:8080/pack.toml", "Debug"]
 	]:
 		print(f"Generating packs for {url}")

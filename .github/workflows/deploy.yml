@@ -109,7 +109,7 @@ jobs:
         run: cp -r neo/generated/pack generated/pack/neo
 
       - name: Copy neo unsup packs
-        run: cp --update=none neo/generated/*.zip generated/pack
+        run: cp --update=none neo/generated/*.zip generated
 
       - uses: actions/upload-artifact@v4
         with:

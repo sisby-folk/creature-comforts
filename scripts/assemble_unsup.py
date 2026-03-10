@@ -19,8 +19,8 @@ def main():
 	repo_name = os.path.basename(repo_root.resolve())
 
 	for (url, ext) in [
-		[f"https://{repo_user}.github.io/{repo_name}/neo/pack.toml", "Neo"],
-		[f"http://localhost:8080/pack.toml", "Neo-Debug"]
+		[f"https://{repo_user}.github.io/{repo_name}/neo/pack.toml", ""],
+		[f"http://localhost:8080/pack.toml", "Debug"]
 	]:
 		print(f"Generating packs for {url}")
 

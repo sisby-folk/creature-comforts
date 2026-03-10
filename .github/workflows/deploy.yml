@@ -49,14 +49,7 @@ jobs:
       - name: Install main python dependencies
         run: pip install -r requirements.txt
 
-      - name: Cache Packwiz
-        id: cache-packwiz
-        uses: actions/cache@v4
-        with:
-          path: ${{ env.PACKWIZ_DIR }}
-          key: packwiz-${{ env.PACKWIZ_COMMIT }}
-      - if: ${{ steps.cache-packwiz.outputs.cache-hit != 'true' }}
-        name: Download Packwiz
+      - name: Download Packwiz
         uses: dawidd6/action-download-artifact@v8
         with:
           github_token: ${{secrets.GITHUB_TOKEN}}
@@ -64,8 +57,7 @@ jobs:
           workflow: go.yml
           name: "Linux 64-bit x86"
           path: ${{ env.PACKWIZ_DIR }}
-          commit: ${{ env.PACKWIZ_COMMIT }}
-          allow_forks: true
+          branch: "main"
       - name: Make packwiz executable
         run: chmod +x ${{ env.PACKWIZ }}
 

@@ -18,9 +18,10 @@ def main():
 	repo_user = "sisby-folk"
 	repo_name = os.path.basename(repo_root.resolve())
 
-	for (url, ext) in [
-		[f"https://{repo_user}.github.io/{repo_name}/neo/pack.toml", ""],
-		[f"http://localhost:8080/pack.toml", "Debug"]
+	for (url, ext, flavors) in [
+		[f"https://{repo_user}.github.io/{repo_name}/neo/pack.toml", "", {"modded": "byo"}],
+		[f"https://{repo_user}.github.io/{repo_name}/neo/pack.toml", "Modded", {"modded": "chefs_choice"}],
+		[f"http://localhost:8080/pack.toml", "Debug", {"modded": "chefs_choice"}]
 	]:
 		print(f"Generating packs for {url}")
 
@@ -45,7 +46,7 @@ def main():
 					patch.write(create_unsup_patch(packwiz_info.unsup).encode("utf-8"))
 
 			with output_zip.open(".minecraft/unsup.ini", mode="w") as unsupini:
-				unsupini.write(create_unsup_ini(url, constants).encode("utf-8"))
+				unsupini.write(create_unsup_ini(url, constants, flavors).encode("utf-8"))
 		print(f"Wrote to \"{prism.relative_to(generated_dir)}\"")
 
 		# Download unsup jar for server
@@ -59,24 +60,28 @@ def main():
 		server_zip = generated_dir / f"{packwiz_info.safe_name()}{('-' + ext) if ext else ''}-Server.zip"
 		with ZipFile(server_zip, "w", compression=zipfile.ZIP_DEFLATED) as output_zip:
 			if packwiz_info.loader == "fabric":
-				with output_zip.open("fabric-server-launcher.jar", mode="w") as f:
+				with output_zip.open(f"fabric-server-launcher.jar", mode="w") as f:
 					f.write(requests.get(f"https://meta.fabricmc.net/v2/versions/loader/{packwiz_info.minecraft_version}/{packwiz_info.loader_version}/1.0.1/server/jar").content)
+				with output_zip.open("start.bat", mode="w") as start_out:
+					start_out.write(f"@echo off\njava -Xmx4096M -Xms4096M -javaagent:unsup.jar -jar fabric-server-launcher.jar nogui\npause".encode("utf-8"))
+				with output_zip.open("start.sh", mode="w") as start_out:
+					start_out.write(f"#!/usr/bin/env\njava -Xmx4096M -Xms4096M -javaagent:unsup.jar -jar fabric-server-launcher.jar nogui".encode("utf-8"))
 			elif packwiz_info.loader == "neoforge":
+				with output_zip.open("neoforge-installer.jar", mode="w") as f:
+					f.write(requests.get(f"https://maven.neoforged.net/releases/net/neoforged/neoforge/{packwiz_info.loader_version}/neoforge-{packwiz_info.loader_version}-installer.jar").content)
 				with output_zip.open("user_jvm_args.txt", mode="w") as jvm_args:
 					jvm_args.write("-javaagent:unsup.jar".encode("utf-8"))
-
-			with output_zip.open("start.bat", mode="w") as start_out:
-				start_out.write("@echo off\njava -Xmx4096M -Xms4096M -javaagent:unsup.jar -jar fabric-server-launcher.jar nogui\npause".encode("utf-8"))
-
-			with output_zip.open("start.sh", mode="w") as start_out:
-				start_out.write("#!/usr/bin/env\njava -Xmx4096M -Xms4096M -javaagent:unsup.jar -jar fabric-server-launcher.jar nogui".encode("utf-8"))
+				with output_zip.open("install.bat", mode="w") as start_out:
+					start_out.write("java -jar neoforge-installer.jar --install-server --server-jar".encode("utf-8"))
+				with output_zip.open("install.sh", mode="w") as start_out:
+					start_out.write("#!/usr/bin/env\njava -jar neoforge-installer.jar --install-server --server-jar".encode("utf-8"))
 
 			with output_zip.open("unsup.jar", mode="w") as unsup_out:
 				with open(unsup_jar_file, "rb") as unsup_src:
 					unsup_out.write(unsup_src.read())
 
 			with output_zip.open("unsup.ini", mode="w") as unsupini:
-				unsupini.write(create_unsup_ini(url, constants).encode("utf-8"))
+				unsupini.write(create_unsup_ini(url, constants, flavors).encode("utf-8"))
 		print(f"Wrote to \"{server_zip.relative_to(generated_dir)}\"")
 
 
@@ -145,14 +150,14 @@ def create_instance_config(packwiz_info, icon_name):
 
 # Creates the unsup config file, which tells unsup where
 # to download mods from
-def create_unsup_ini(url: str, constants):
+def create_unsup_ini(url: str, constants, flavors):
 	colour_entries = []
 	for colour_key in unsup_colors:
 		colour_value = common.get_colour(constants, "_unsup_" + colour_key)
 		if colour_value:
 			colour_value = colour_value.replace("#", "")
 			colour_entries.append(f"{colour_key}={colour_value}")
-	return unsup_ini_template.replace("{url}", url).replace("{colors}", "\n".join(colour_entries))
+	return unsup_ini_template.replace("{url}", url).replace("{colors}", "\n".join(colour_entries)).replace("{flavors}", "\n" if not flavors else "\n".join([f"{k}={flavors[k]}" for k in flavors.keys()]))
 
 
 instance_cfg_template = """
@@ -181,6 +186,8 @@ source={url}
 preset=minecraft
 [colors]
 {colors}
+[flavors]
+{flavors}
 """.strip()
 
 if __name__ == "__main__":

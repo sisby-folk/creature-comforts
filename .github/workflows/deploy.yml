@@ -3,7 +3,7 @@ name: Build & Deploy Modpack
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["1.21"]
+    branches: ["1.21", "1.21-neo"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -37,7 +37,7 @@ jobs:
       - name: Checkout neo
         uses: actions/checkout@v4
         with:
-          ref: "neo"
+          ref: "1.21-neo"
           path: neo
           clean: false
 

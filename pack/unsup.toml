@@ -23,6 +23,12 @@ flavors="chefs_choice"
 [metafile.geckolib]
 flavors="chefs_choice"
 
+[metafile.lodestonelib]
+flavors="chefs_choice"
+
+[metafile.malum]
+flavors="chefs_choice"
+
 [metafile.modonomicon]
 flavors="chefs_choice"
 

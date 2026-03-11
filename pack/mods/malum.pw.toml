@@ -1,0 +1,8 @@
+name = "Malum"
+filename = "malum-1.21.1-1.8.2-spectrumfix.jar"
+side = "both"
+
+[download]
+url = "https://github.com/sisby-folk/Malum-Mod/releases/download/spectrumfix/malum-1.21.1-1.8.2-spectrumfix.jar"
+hash-format = "sha256"
+hash = "6cda15d1ad57ec95450ce29ae839459a0fe4cc2f715c11b758899f43e58f957d"

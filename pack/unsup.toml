@@ -11,7 +11,16 @@ id = "chefs_choice"
 name = "Chef's Choice"
 description = "Include a small selection of cohesive, self-contained content mods. Installs Cerulean and Spectrum"
 
-[metafile.spectrum]
+[metafile.ars-nouveau]
+flavors="chefs_choice"
+
+[metafile.create]
+flavors="chefs_choice"
+
+[metafile.curios]
+flavors="chefs_choice"
+
+[metafile.geckolib]
 flavors="chefs_choice"
 
 [metafile.modonomicon]
@@ -20,5 +29,26 @@ flavors="chefs_choice"
 [metafile.paradise-lost]
 flavors="chefs_choice"
 
+[metafile.productivebees]
+flavors="chefs_choice"
+
+[metafile.quark]
+flavors="chefs_choice"
+
+[metafile.resourceful-lib]
+flavors="chefs_choice"
+
 [metafile.revelationary]
+flavors="chefs_choice"
+
+[metafile.spectrum]
+flavors="chefs_choice"
+
+[metafile.the-bumblezone]
+flavors="chefs_choice"
+
+[metafile.tropicraft]
+flavors="chefs_choice"
+
+[metafile.zeta]
 flavors="chefs_choice"

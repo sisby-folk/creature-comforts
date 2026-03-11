@@ -1,13 +1,13 @@
 name = "Item Descriptions"
-filename = "item_descriptions-2.7.2+1.21.1-fabric.jar"
+filename = "item_descriptions-2.7.2+1.21.1-neoforge.jar"
 side = "client"
 
 [download]
-url = "https://cdn.modrinth.com/data/UaizcMKP/versions/nqOTvmB3/item_descriptions-2.7.2%2B1.21.1-fabric.jar"
+url = "https://cdn.modrinth.com/data/UaizcMKP/versions/3MvmAqB5/item_descriptions-2.7.2%2B1.21.1-neoforge.jar"
 hash-format = "sha512"
-hash = "c4dfbd33ff2f5f92e9c03c95f3340db83042499ace7d003c89bda273e39b9e7240ad00c5fad94a014752a469e29c4784aa34fd045bf4ea9c1a1d1f8eef71eed9"
+hash = "9e2159f4bd0fc5c1b93fd306595f1c84e5bcfa39984d84e21c127804718d1e81fe85d7d5747dc40323e65453447038dccf753900a851793140863ca3630e79d9"
 
 [update]
 [update.modrinth]
 mod-id = "UaizcMKP"
-version = "nqOTvmB3"
+version = "3MvmAqB5"

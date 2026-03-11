@@ -46,7 +46,7 @@ def main():
 					patch.write(create_unsup_patch(packwiz_info.unsup).encode("utf-8"))
 
 			with output_zip.open(".minecraft/unsup.ini", mode="w") as unsupini:
-				unsupini.write(create_unsup_ini(url, constants, flavors).encode("utf-8"))
+				unsupini.write(create_unsup_ini(url, constants, flavors, packwiz_info).encode("utf-8"))
 		print(f"Wrote to \"{prism.relative_to(generated_dir)}\"")
 
 		# Download unsup jar for server
@@ -85,7 +85,7 @@ def main():
 					unsup_out.write(unsup_src.read())
 
 			with output_zip.open("unsup.ini", mode="w") as unsupini:
-				unsupini.write(create_unsup_ini(url, constants, flavors).encode("utf-8"))
+				unsupini.write(create_unsup_ini(url, constants, flavors, packwiz_info).encode("utf-8"))
 		print(f"Wrote to \"{server_zip.relative_to(generated_dir)}\"")
 
 
@@ -154,14 +154,14 @@ def create_instance_config(packwiz_info, icon_name):
 
 # Creates the unsup config file, which tells unsup where
 # to download mods from
-def create_unsup_ini(url: str, constants, flavors):
+def create_unsup_ini(url: str, constants, flavors, info):
 	colour_entries = []
 	for colour_key in unsup_colors:
 		colour_value = common.get_colour(constants, "_unsup_" + colour_key)
 		if colour_value:
 			colour_value = colour_value.replace("#", "")
 			colour_entries.append(f"{colour_key}={colour_value}")
-	return unsup_ini_template.replace("{url}", url).replace("{colors}", "\n".join(colour_entries)).replace("{flavors}", "\n" if not flavors else "\n".join([f"{k}={flavors[k]}" for k in flavors.keys()]))
+	return unsup_ini_template.replace("{name}", info.name).replace("{url}", url).replace("{colors}", "\n".join(colour_entries)).replace("{flavors}", "\n" if not flavors else "\n".join([f"{k}={flavors[k]}" for k in flavors.keys()]))
 
 
 instance_cfg_template = """
@@ -188,6 +188,9 @@ version=1
 source_format=packwiz
 source={url}
 preset=minecraft
+[branding]
+modpack_name={name}
+icon=GwAKIC4OeBPrJLw2QPhH7ANXqIshAHCZecrYfK1Km2EUxukkvXPAj9kfewQAz3/5w92IbhRZ8D8L/iP6IlqWFEWbumEOZDSW+8QOSBiCCO8v+9hWodMD//9/3/Sus659e4QB8G6aLzXY/9TKRsEwwZZ/sMJoFgvc0qigpo3Uh2nU6Kd7N4G2QEWPfx3aShSfLCeB9st6TQhCvbTcCE1U8jGY1RznKq9ePmIHU2lPEWISEl+ozjv+IYjg93zBfTYykrJEbUsS8aW++clRRlCQcJkxtP4JOsJkshIyY6rOMn9zj4uc5CYvecwH/qsv/uccPUlDiAwIyVhes5VmxOm9pKMcIh6VGM4mnrzRB/+y+y2i4OmIbCAtXdjDT0RvtzoTMcfFUUUt+o98rTfPaNzjRORjLLzTc8ZmYuRCTHo9r/XgKvFzJRz1OEeg7pxfzq2jADtn3ZidR0fHP0r+Im6elOZbJWXzYkwljbLpyEc1IoVthJ0paZU1EVk9CXMCKnGa11SJaFlJ7ayZWX5CfrLyRxV+kD6kfnlCxqyO8b2SGRyqZHzI3DJPCf3wRtZ/JU34s/xm6aXC8Pw/Z0zLhh6z8PdV71PnZT9p0UCZWWVC3mz6BVXJFLQpykffBLt7MqenOVSe8I7y0hUS8qrMwfYgAofLa2SWk3BsHiojL0XSWsaewuemkMuluF4pY8TLayXuD/md4oqlJCpa1p9LBPDO1a+oUvFyZepBs9n5fw43LgSS9grB4Sz4kv65R+RUlulDhRR3aL0TicBf9ZpxkuypkuCjOjRIXCZBbIt/q0HyhEv8X48NDv5EqFQbm8o8GmEUebtCnZA4/CgzJoE0BMr8yxL6UofULfXzi/y0D5GML1U4FhknEJzcJWRsS5NcHG+KJ+nkN/cnYSKmlE8QOiDRRnmD2DFyzTJr4qR4I/P1MDjwovyEKMHoljcewyhZybI4aSd56TBIHBspelg9rBCX9RK2gD3j4fHYl1Lyf4WO98FIDE+zwwvb3IKCPGeLsVjP6kiYDVxeKtaVz+GUruRoRA6C3qP3CBlWJ+oZtgqT1+E/5bADJq/5cL5BPthrUfVhgllvYEsZnflxMUlPkSKo1/ZB1qx+jnEMKW9LsAkc3dZ0fy1e/ebjoycPOQHWW1epEHO3TjkDYW9jvXbXlv2f99YvD+MjrB9XnXbDtKxOZQvDYlZPLNQ5l8rf4Y8y/5O6eXvv4se1u+d0DKwgW7z/rjeERtKgysPS4ai3tKPZc+h3ihSniMrWwTBVWPyDqDkV9/C/KmtJ8hFDcK683fzzSYUWMZaWFxsnme3NBh6VGZ0urfcwlNAxRpXpES1cCJ8pmHCIr1UIkDMz0q8VDhMhRnnqnkYkrGfXPdjmN+NRSnTmPmtImS8h8/8feBxGBw==
 [colors]
 {colors}
 [flavors]

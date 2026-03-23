@@ -1,22 +1,42 @@
 [
   {
+    "comment": "create.keyinfo.",
+    "translation": "create.keyinfo.",
+    "key": "key.keyboard.left.control"
+  },
+  {
+    "comment": "create.keyinfo.rotate_menu",
+    "translation": "create.keyinfo.rotate_menu",
+    "key": "key.keyboard.unknown"
+  },
+  {
+    "comment": "create.keyinfo.toolbelt",
+    "translation": "create.keyinfo.toolbelt",
+    "key": "key.keyboard.left.alt"
+  },
+  {
+    "comment": "create.keyinfo.toolmenu",
+    "translation": "create.keyinfo.toolmenu",
+    "key": "key.keyboard.left.alt"
+  },
+  {
     "comment": "iris.keybind.reload",
-    "translation": "Reload Shaders",
+    "translation": "iris.keybind.reload",
     "key": "key.keyboard.r"
   },
   {
     "comment": "iris.keybind.shaderPackSelection",
-    "translation": "Shaderpack Selection Screen",
+    "translation": "iris.keybind.shaderPackSelection",
     "key": "key.keyboard.o"
   },
   {
     "comment": "iris.keybind.toggleShaders",
-    "translation": "Toggle Shaders",
+    "translation": "iris.keybind.toggleShaders",
     "key": "key.keyboard.k"
   },
   {
     "comment": "iris.keybind.wireframe",
-    "translation": "Wireframe (SP only)",
+    "translation": "iris.keybind.wireframe",
     "key": "key.keyboard.unknown"
   },
   {
@@ -26,8 +46,93 @@
   },
   {
     "comment": "key.apoli.usability_hint.show_powers",
-    "translation": "Show Powers in Usability Hints",
+    "translation": "key.apoli.usability_hint.show_powers",
     "key": "key.keyboard.left.alt"
+  },
+  {
+    "comment": "key.ars_nouveau.familiar_toggle",
+    "translation": "key.ars_nouveau.familiar_toggle",
+    "key": "key.keyboard.unknown"
+  },
+  {
+    "comment": "key.ars_nouveau.head_curio_hotkey",
+    "translation": "key.ars_nouveau.head_curio_hotkey",
+    "key": "key.keyboard.g"
+  },
+  {
+    "comment": "key.ars_nouveau.next_slot",
+    "translation": "key.ars_nouveau.next_slot",
+    "key": "key.keyboard.x"
+  },
+  {
+    "comment": "key.ars_nouveau.open_book",
+    "translation": "key.ars_nouveau.open_book",
+    "key": "key.keyboard.c"
+  },
+  {
+    "comment": "key.ars_nouveau.open_documentation",
+    "translation": "key.ars_nouveau.open_documentation",
+    "key": "key.keyboard.left.control"
+  },
+  {
+    "comment": "key.ars_nouveau.previous_slot",
+    "translation": "key.ars_nouveau.previous_slot",
+    "key": "key.keyboard.z"
+  },
+  {
+    "comment": "key.ars_nouveau.qc1",
+    "translation": "key.ars_nouveau.qc1",
+    "key": "key.keyboard.unknown"
+  },
+  {
+    "comment": "key.ars_nouveau.qc10",
+    "translation": "key.ars_nouveau.qc10",
+    "key": "key.keyboard.unknown"
+  },
+  {
+    "comment": "key.ars_nouveau.qc2",
+    "translation": "key.ars_nouveau.qc2",
+    "key": "key.keyboard.unknown"
+  },
+  {
+    "comment": "key.ars_nouveau.qc3",
+    "translation": "key.ars_nouveau.qc3",
+    "key": "key.keyboard.unknown"
+  },
+  {
+    "comment": "key.ars_nouveau.qc4",
+    "translation": "key.ars_nouveau.qc4",
+    "key": "key.keyboard.unknown"
+  },
+  {
+    "comment": "key.ars_nouveau.qc5",
+    "translation": "key.ars_nouveau.qc5",
+    "key": "key.keyboard.unknown"
+  },
+  {
+    "comment": "key.ars_nouveau.qc6",
+    "translation": "key.ars_nouveau.qc6",
+    "key": "key.keyboard.unknown"
+  },
+  {
+    "comment": "key.ars_nouveau.qc7",
+    "translation": "key.ars_nouveau.qc7",
+    "key": "key.keyboard.unknown"
+  },
+  {
+    "comment": "key.ars_nouveau.qc8",
+    "translation": "key.ars_nouveau.qc8",
+    "key": "key.keyboard.unknown"
+  },
+  {
+    "comment": "key.ars_nouveau.qc9",
+    "translation": "key.ars_nouveau.qc9",
+    "key": "key.keyboard.unknown"
+  },
+  {
+    "comment": "key.ars_nouveau.selection_hud",
+    "translation": "key.ars_nouveau.selection_hud",
+    "key": "key.keyboard.v"
   },
   {
     "comment": "key.attack",
@@ -55,13 +160,18 @@
     "key": "key.keyboard.slash"
   },
   {
+    "comment": "key.curios.open.desc",
+    "translation": "key.curios.open.desc",
+    "key": "key.keyboard.g"
+  },
+  {
     "comment": "key.drop",
     "translation": "Drop Selected Item",
     "key": "key.keyboard.q"
   },
   {
     "comment": "key.fabrictailor.toggle_skin_gui",
-    "translation": "Open skin GUI",
+    "translation": "key.fabrictailor.toggle_skin_gui",
     "key": "key.keyboard.k"
   },
   {
@@ -76,7 +186,7 @@
   },
   {
     "comment": "key.hoofprint.open",
-    "translation": "Open Map Screen",
+    "translation": "key.hoofprint.open",
     "key": "key.keyboard.m"
   },
   {
@@ -131,12 +241,12 @@
   },
   {
     "comment": "key.inventory_tabs.key.next_tab",
-    "translation": "Next Tab",
+    "translation": "key.inventory_tabs.key.next_tab",
     "key": "key.keyboard.tab"
   },
   {
     "comment": "key.inventory_tabs.key.toggle_tabs",
-    "translation": "Toggle Tab Visibility",
+    "translation": "key.inventory_tabs.key.toggle_tabs",
     "key": "key.keyboard.left.bracket"
   },
   {
@@ -156,22 +266,22 @@
   },
   {
     "comment": "key.modmenu.open_menu",
-    "translation": "Open Mod Menu",
+    "translation": "key.modmenu.open_menu",
     "key": "key.keyboard.unknown"
   },
   {
     "comment": "key.origins.primary_active",
-    "translation": "Active Power (Primary)",
+    "translation": "key.origins.primary_active",
     "key": "key.keyboard.g"
   },
   {
     "comment": "key.origins.secondary_active",
-    "translation": "Active Power (Secondary)",
+    "translation": "key.origins.secondary_active",
     "key": "key.keyboard.h"
   },
   {
     "comment": "key.origins.view_origin",
-    "translation": "View Origin",
+    "translation": "key.origins.view_origin",
     "key": "key.keyboard.o"
   },
   {
@@ -181,7 +291,7 @@
   },
   {
     "comment": "key.picohud.show",
-    "translation": "Show Overlay",
+    "translation": "key.picohud.show",
     "key": "key.keyboard.left.alt"
   },
   {
@@ -190,8 +300,13 @@
     "key": "key.keyboard.tab"
   },
   {
+    "comment": "key.ponder.ponder",
+    "translation": "key.ponder.ponder",
+    "key": "key.keyboard.w"
+  },
+  {
     "comment": "key.portable_crafting.open_crafting_table",
-    "translation": "Open Crafting Table",
+    "translation": "key.portable_crafting.open_crafting_table",
     "key": "key.keyboard.v"
   },
   {
@@ -251,7 +366,162 @@
   },
   {
     "comment": "options.narrator_hotkey",
-    "translation": "Toggle Narrator (+Ctrl)",
+    "translation": "options.narrator_hotkey",
     "key": "key.keyboard.unknown"
+  },
+  {
+    "comment": "quark.emote.cheer",
+    "translation": "quark.emote.cheer",
+    "key": "key.keyboard.unknown"
+  },
+  {
+    "comment": "quark.emote.clap",
+    "translation": "quark.emote.clap",
+    "key": "key.keyboard.unknown"
+  },
+  {
+    "comment": "quark.emote.facepalm",
+    "translation": "quark.emote.facepalm",
+    "key": "key.keyboard.unknown"
+  },
+  {
+    "comment": "quark.emote.headbang",
+    "translation": "quark.emote.headbang",
+    "key": "key.keyboard.unknown"
+  },
+  {
+    "comment": "quark.emote.no",
+    "translation": "quark.emote.no",
+    "key": "key.keyboard.unknown"
+  },
+  {
+    "comment": "quark.emote.point",
+    "translation": "quark.emote.point",
+    "key": "key.keyboard.unknown"
+  },
+  {
+    "comment": "quark.emote.salute",
+    "translation": "quark.emote.salute",
+    "key": "key.keyboard.unknown"
+  },
+  {
+    "comment": "quark.emote.shrug",
+    "translation": "quark.emote.shrug",
+    "key": "key.keyboard.unknown"
+  },
+  {
+    "comment": "quark.emote.think",
+    "translation": "quark.emote.think",
+    "key": "key.keyboard.unknown"
+  },
+  {
+    "comment": "quark.emote.wave",
+    "translation": "quark.emote.wave",
+    "key": "key.keyboard.unknown"
+  },
+  {
+    "comment": "quark.emote.weep",
+    "translation": "quark.emote.weep",
+    "key": "key.keyboard.unknown"
+  },
+  {
+    "comment": "quark.emote.yes",
+    "translation": "quark.emote.yes",
+    "key": "key.keyboard.unknown"
+  },
+  {
+    "comment": "quark.keybind.autorun",
+    "translation": "quark.keybind.autorun",
+    "key": "key.keyboard.unknown"
+  },
+  {
+    "comment": "quark.keybind.back",
+    "translation": "quark.keybind.back",
+    "key": "key.mouse.4"
+  },
+  {
+    "comment": "quark.keybind.camera_mode",
+    "translation": "quark.keybind.camera_mode",
+    "key": "key.keyboard.f12"
+  },
+  {
+    "comment": "quark.keybind.change_hotbar",
+    "translation": "quark.keybind.change_hotbar",
+    "key": "key.keyboard.z"
+  },
+  {
+    "comment": "quark.keybind.lock_rotation",
+    "translation": "quark.keybind.lock_rotation",
+    "key": "key.keyboard.k"
+  },
+  {
+    "comment": "quark.keybind.narrator_full_readout",
+    "translation": "quark.keybind.narrator_full_readout",
+    "key": "key.keyboard.unknown"
+  },
+  {
+    "comment": "quark.keybind.narrator_readout",
+    "translation": "quark.keybind.narrator_readout",
+    "key": "key.keyboard.unknown"
+  },
+  {
+    "comment": "quark.keybind.patreon_emote.dab",
+    "translation": "quark.keybind.patreon_emote.dab",
+    "key": "key.keyboard.unknown"
+  },
+  {
+    "comment": "quark.keybind.patreon_emote.dance",
+    "translation": "quark.keybind.patreon_emote.dance",
+    "key": "key.keyboard.unknown"
+  },
+  {
+    "comment": "quark.keybind.patreon_emote.exorcist",
+    "translation": "quark.keybind.patreon_emote.exorcist",
+    "key": "key.keyboard.unknown"
+  },
+  {
+    "comment": "quark.keybind.patreon_emote.jet",
+    "translation": "quark.keybind.patreon_emote.jet",
+    "key": "key.keyboard.unknown"
+  },
+  {
+    "comment": "quark.keybind.patreon_emote.tpose",
+    "translation": "quark.keybind.patreon_emote.tpose",
+    "key": "key.keyboard.unknown"
+  },
+  {
+    "comment": "quark.keybind.patreon_emote.zombie",
+    "translation": "quark.keybind.patreon_emote.zombie",
+    "key": "key.keyboard.unknown"
+  },
+  {
+    "comment": "quark.keybind.shift_lock",
+    "translation": "quark.keybind.shift_lock",
+    "key": "key.keyboard.unknown"
+  },
+  {
+    "comment": "quark.keybind.sort_container",
+    "translation": "quark.keybind.sort_container",
+    "key": "key.keyboard.unknown"
+  },
+  {
+    "comment": "quark.keybind.sort_player",
+    "translation": "quark.keybind.sort_player",
+    "key": "key.keyboard.unknown"
+  },
+  {
+    "comment": "quark.keybind.transfer_extract",
+    "translation": "quark.keybind.transfer_extract",
+    "key": "key.keyboard.unknown"
+  },
+  {
+    "comment": "quark.keybind.transfer_insert",
+    "translation": "quark.keybind.transfer_insert",
+    "key": "key.keyboard.unknown"
+  },
+  {
+    "comment": "quark.keybind.variant_selector",
+    "translation": "quark.keybind.variant_selector",
+    "key": "key.keyboard.r"
   }
 ]

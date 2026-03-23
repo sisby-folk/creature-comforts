@@ -55,16 +55,25 @@
   "ars_nouveau": {
     "mob_jar": true
   },
+  "jadeaddons": {
+    "equipment_requirement": ""
+  },
+  "jadeaddons.create": {
+    "filter": true,
+    "backtank_capacity": true,
+    "goggles.requires_goggles": true,
+    "goggles": false,
+    "blaze_burner": true,
+    "exact_block": true,
+    "goggles.detailed": false,
+    "placard": true
+  },
   "jade_access": {
     "held_item": true,
     "sign": true,
     "block": true,
     "entity": true,
     "entity_variant": true
-  },
-  "item-descriptions": {
-    "block_descriptions": true,
-    "entity_descriptions": true
   },
   "jade": {
     "coordinates.rel": false,
@@ -76,6 +85,10 @@
     "registry_name": "OFF",
     "block_properties": false,
     "mod_name": true
+  },
+  "item_descriptions": {
+    "block_descriptions": true,
+    "entity_descriptions": true
   },
   "productivebees": {
     "bee": true,

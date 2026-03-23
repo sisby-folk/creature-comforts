@@ -1,1 +1,2 @@
 darkMojangStudiosBackground:true
+key_key.jade.show_overlay:key.keyboard.left.alt

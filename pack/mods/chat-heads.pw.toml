@@ -1,0 +1,8 @@
+name = "chat-heads"
+filename = "chatheads-1.0+1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://github.com/sisby-folk/ServerChatHeads/releases/download/1.0.0/chatheads-1.0+1.21.1.jar"
+hash-format = "sha256"
+hash = "81027fb83985c3ff43825f5f594d1e14f62a6f0a53ccbac3b2c492dce46b256a"

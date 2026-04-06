@@ -1,0 +1,15 @@
+name = "themetip"
+filename = "themetip-u0.6-kaleido.jar"
+side = "both"
+
+[download]
+url = "https://github.com/sisby-folk/themetip/releases/download/v0.6-fixneo/themetip-u0.6-kaleido.jar"
+hash-format = "sha256"
+hash = "5d25701de9027751fde0646488e68916a4db82be2db16aa7e82f980dda94b26d"
+
+[update]
+[update.github]
+branch = "main"
+regex = "^.+(?<!-api|-dev|-dev-preshadow|-sources)\\.jar$"
+slug = "sisby-folk/themetip"
+tag = "v0.6-fixneo"
